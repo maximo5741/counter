@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+    <header>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="favicon.ico">
+		<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+		<meta name="format-detection" content="telephone=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+		<title>Counter</title>
+		<style>
+			/*#sub{
+				float:left ;
+			}*/
+		</style>
+    </header>
+<body>
+
+	<div id="content" data-role="page">
+		<div data-role="header">
+			<h3>aCounter</h3>
+		</div>
+
+			<div role="main" class="ui-content">
+
+				<!--Start-->
+				<!--<form action="mailto:tampapopup@gmail.com" method="post" enctype="text/plain">-->
+
+				<!--<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<li><a href="#one" data-ajax="false">one</a></li>
+							<li><input type="text" id="visitors" class="erase" value="0" </li>
+							<li><a href="ajax-content-ignore.html" data-ajax="false">three</a></li>
+						</ul>
+					</div>
+				</div>-->
+
+				<!--Start-->
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<label to="sub">visitors</label>
+							<li><input type="button" id="sub" class="ui-btn" onclick="sub('visitors')" value="-" /></li>
+							<li><input type="number" id="visitors" class="erase" value="0" /></li>
+							<li><input type="button" id="add" class="ui-btn" onclick="add('visitors')" value="+" /></li>
+						</ul>
+					</div>
+				</div>
+					<!--end-->
+				<!--Start-->
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<label to="sub">Prime Member</label>
+							<li><input type="button" id="sub" onclick="sub('pm')" value="-" /></li>
+							<li><input type="number" id="pm" class="erase" value="0" /></li>
+							<li><input type="button" id="add" onclick="add('pm')" value="+" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--end-->
+
+				<!--Start-->
+				<!--<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>-->
+				<!--end-->
+
+				<!--Start-->
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<label to="sub">CX Surveys</label>
+							<li><input type="button" id="sub" onclick="sub('cxs')" value="-" /></li>
+							<li><input type="number" id="cxs" class="erase" value="0" /></li>
+							<li><input type="button" id="add" onclick="add('cxs')" value="+" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--end-->
+				<!--Start-->
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<label to="sub">Demos</label>
+							<li><input type="button" id="sub" onclick="sub('demos')" value="-" /></li>
+							<li><input type="number" id="demos" class="erase" value="0" /></li>
+							<li><input type="button" id="add" onclick="add('demos')" value="+" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--end-->
+				<!--Start-->
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<label to="sub">Alexa Demos</label>
+							<li><input type="button" id="sub" onclick="sub('ad')" value="-" /></li>
+							<li><input type="number" id="ad" class="erase" value="0" /></li>
+							<li><input type="button" id="add" onclick="add('ad')" value="+" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--end-->
+				<!--Start-->
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<label to="sub">Eink</label>
+							<li><input type="button" id="sub" onclick="sub('eink')" value="-" /></li>
+							<li><input type="number" id="eink" class="erase" value="0" /></li>
+							<li><input type="button" id="add" onclick="add('eink')" value="+" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--end-->
+				<!--Start-->
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<label to="sub">Tab</label>
+							<li><input type="button" id="sub" onclick="sub('tab')" value="-" /></li>
+							<li><input type="number" id="tab" class="erase" value="0" /></li>
+							<li><input type="button" id="add" onclick="add('tab')" value="+" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--end-->
+				<!--Start-->
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<label to="sub">SMP</label>
+							<li><input type="button" id="sub" onclick="sub('smp')" value="-" /></li>
+							<li><input type="number" id="smp" class="erase" value="0" /></li>
+							<li><input type="button" id="add" onclick="add('smp')" value="+" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--end-->
+				<!--Start-->
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<label to="sub">Alpha</label>
+							<li><input type="button" id="sub" onclick="sub('alpha')" value="-" /></li>
+							<li><input type="number" id="alpha" class="erase" value="0" /></li>
+							<li><input type="button" id="add" onclick="add('alpha')" value="+" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--end-->
+				<!--Start-->
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<label to="sub">Accessories</label>
+							<li><input type="button" id="sub" onclick="sub('acc')" value="-" /></li>
+							<li><input type="number" id="acc" class="erase" value="0" /></li>
+							<li><input type="button" id="add" onclick="add('acc')" value="+" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--end-->
+				<!--Start-->
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<label to="sub">GF10</label>
+							<li><input type="button" id="sub" onclick="sub('gf10')" value="-" /></li>
+							<li><input type="number" id="gf10" class="erase" value="0" /></li>
+							<li><input type="button" id="add" onclick="add('gf10')" value="+" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--end-->
+				<!--Start-->
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<label to="sub">GF25</label>
+							<li><input type="button" id="sub" onclick="sub('gf25')" value="-" /></li>
+							<li><input type="number" id="gf25" class="erase" value="0" /></li>
+							<li><input type="button" id="add" onclick="add('gf25')" value="+" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--end-->
+				<!--Start-->
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<label to="sub">GF50</label>
+							<li><input type="button" id="sub" onclick="sub('gf50')" value="-" /></li>
+							<li><input type="number" id="gf50" class="erase" value="0" /></li>
+							<li><input type="button" id="add" onclick="add('gf50')" value="+" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--end-->
+				<!--Start-->
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<label to="sub">Prime $99</label>
+							<li><input type="button" id="sub" onclick="sub('prime')" value="-" /></li>
+							<li><input type="number" id="prime" class="erase" value="0" /></li>
+							<li><input type="button" id="add" onclick="add('prime')" value="+" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--end-->
+				<!--Start-->
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<label to="sub">Returns</label>
+							<li><input type="button" id="sub" onclick="sub('returns')" value="-" /></li>
+							<li><input type="number" id="returns" class="erase" value="0" /></li>
+							<li><input type="button" id="add" onclick="add('returns')" value="+" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--end-->
+				<!--Start-->
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<label to="sub">Acc Returns</label>
+							<li><input type="button" id="sub" onclick="sub('accr')" value="-" /></li>
+							<li><input type="number" id="accr" class="erase" value="0" /></li>
+							<li><input type="button" id="add" onclick="add('accr')" value="+" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--end-->
+				<!--Start-->
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<label to="sub">2+FTV+</label>
+							<li><input type="button" id="sub" onclick="sub('2ftv')" value="-" /></li>
+							<li><input type="number" id="2ftv" class="erase" value="0" /></li>
+							<li><input type="button" id="add" onclick="add('2ftv')" value="+" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--end-->
+				<!--Start-->
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<label to="sub">W.O.W</label>
+							<li><input type="button" id="sub" onclick="sub('wow')" value="-" /></li>
+							<li><input type="number" id="wow" class="erase" value="0" /></li>
+							<li><input type="button" id="add" onclick="add('wow')" value="+" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--end-->
+				<!--Start-->
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<label to="sub">Guru</label>
+							<li><input type="button" id="sub" onclick="sub('guru')" value="-" /></li>
+							<li><input type="number" id="guru" class="erase" value="0" /></li>
+							<li><input type="button" id="add" onclick="add('guru')" value="+" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--end-->
+
+					<button onclick="areu('Paloma, are you sure?')">Try me</button>
+					<button onclick="erase()">Clear</button>
+					<input type="submit" value="Email it" />
+				<!--</form>-->
+			</div>
+
+		<div data-role="footer"></div>
+	</div>
+
+	<script>
+		function erase() {
+			for(i = 0; i < 19; i++){
+				var x = document.getElementsByClassName("erase");
+				x[i].value = "0";
+			}
+
+		}
+
+	   function areu(content){
+		alert(content);
+	   }
+		function add(name) {
+			document.getElementById(name).value++;
+			//document.getElementById("field2").value = document.getElementById("field1").value;
+		}
+		function sub(name){
+			document.getElementById(name).value--;
+		}
+	</script>
+
+</body>
+</html>
