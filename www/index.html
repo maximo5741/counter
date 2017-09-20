@@ -46,6 +46,8 @@
 				</div>-->
 
 				<!--Start-->
+
+
 				<div data-role="tabs" id="tabs">
 					<div data-role="navbar">
 						<ul>
@@ -288,22 +290,25 @@
 				</div>
 				<!--end-->
 
-					<button onclick="areu('Paloma, are you sure?')">Try me</button>
+					<!--<button onclick="areu('Paloma, are you sure?')">Try me</button>-->
 					<button onclick="erase()">Clear</button>
+				<form action="javascript:sendMail();" name="pmForm" id="pmForm" method="post">
 					<input type="submit" value="Email it" />
-				<!--</form>-->
+				</form>
 			</div>
 
-		<div data-role="footer"></div>
+		<div data-role="footer">aCounter app was made by Maximo Del Valle & Paloma Harrell</div>
 	</div>
 
 	<script>
+
+
+
 		function erase() {
 			for(i = 0; i < 19; i++){
 				var x = document.getElementsByClassName("erase");
 				x[i].value = "0";
 			}
-
 		}
 
 	   function areu(content){
@@ -316,6 +321,20 @@
 		function sub(name){
 			document.getElementById(name).value--;
 		}
+        function sendMail() {
+            /*var test = document.getElementById('visitors').value;
+            var lol='mailto:blahblah@gmail.com?Subject=';
+            lol=+ "test";
+            lol=+ "&body=";
+            lol=+"test";
+*/
+            var test = document.getElementById('visitors').value;
+		    var lol = "mailto:test@example.com?subject=";
+                lol +="Daily Count";
+            	lol += "&body=";
+            	lol+=test;
+            window.open(lol);
+        }
 	</script>
 
 </body>
