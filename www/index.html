@@ -293,9 +293,12 @@
 				<form action="javascript:sendMail();" name="pmForm" id="pmForm" method="post">
 					<input type="submit" value="Email it" />
 				</form>
+				<form action="javascript:feedback();" name="feedback" id="" method="post">
+					<input type="submit" value="Feedback" />
+				</form>
 			</div>
 
-		<div data-role="footer">aCounter app was made by Maximo Del Valle & Paloma Harrell</div>
+		<div data-role="footer">aCounter app was made by Maximo Del Valle & Paloma Harrell, Alpha 1.05 version</div>
 	</div>
 
 	<script>
@@ -338,11 +341,18 @@
                 text += iname[i] +":"+ ivalues[i] + "<br />";
 			}
 
-		    var lol = "mailto:maximo.delvalle001@mymdc.net?subject=";
+		    var lol = "mailto:@amazon.com?subject=";
                 lol +="Daily Count";
             	lol += "&body=";
             	lol+=text;
             window.open(lol);
+        }
+
+        function  feedback() {
+            var maxmail = "mailto:maxvalle@amazon.com?subject=";
+            maxmail +="Feedback aCounter";
+            window.open(maxmail);
+
         }
 	</script>
 
