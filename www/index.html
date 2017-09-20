@@ -46,12 +46,24 @@
 				</div>-->
 
 				<!--Start-->
+				<!--Start-->
+				<!--<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>-->
+				<!--end-->
 
 
 				<div data-role="tabs" id="tabs">
 					<div data-role="navbar">
 						<ul>
-							<label to="sub">visitors</label>
+							<label to="sub">Visitors</label>
 							<li><input type="button" id="sub" class="ui-btn" onclick="sub('visitors')" value="-" /></li>
 							<li><input type="number" id="visitors" class="erase" value="0" /></li>
 							<li><input type="button" id="add" class="ui-btn" onclick="add('visitors')" value="+" /></li>
@@ -71,20 +83,6 @@
 					</div>
 				</div>
 				<!--end-->
-
-				<!--Start-->
-				<!--<div data-role="tabs" id="tabs">
-					<div data-role="navbar">
-						<ul>
-
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-					</div>
-				</div>-->
-				<!--end-->
-
 				<!--Start-->
 				<div data-role="tabs" id="tabs">
 					<div data-role="navbar">
@@ -328,11 +326,22 @@
             lol=+ "&body=";
             lol=+"test";
 */
-            var test = document.getElementById('visitors').value;
-		    var lol = "mailto:test@example.com?subject=";
+            var iname = ["Visitors","Prime Member","CX Surveys","Demos","Alexa Demos","Eink","Tab","SMP","Alpha","Accessories","GF10","GF25","GF50","Prime $99","Returns","Acc Returns","2+FTV+","W.O.W","Guru"];
+            var ivalues = [document.getElementById('visitors').value,document.getElementById('pm').value,
+				document.getElementById('cxs').value,document.getElementById('demos').value,document.getElementById('ad').value,document.getElementById('eink').value,
+				document.getElementById('tab').value,document.getElementById('smp').value,document.getElementById('alpha').value,document.getElementById('acc').value,
+				document.getElementById('gf10').value,document.getElementById('gf25').value,document.getElementById('gf50').value,document.getElementById('prime').value,
+				document.getElementById('returns').value,document.getElementById('accr').value,document.getElementById('2ftv').value,
+				document.getElementById('wow').value,document.getElementById('guru').value];
+            var text = "";
+            for(i = 0; i < ivalues.length; i++){
+                text += iname[i] +":"+ ivalues[i] + "<br />";
+			}
+
+		    var lol = "mailto:maximo.delvalle001@mymdc.net?subject=";
                 lol +="Daily Count";
             	lol += "&body=";
-            	lol+=test;
+            	lol+=text;
             window.open(lol);
         }
 	</script>
