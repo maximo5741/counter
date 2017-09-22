@@ -1,0 +1,4 @@
+/*This stylesheets fix some of the errors that Jquery Mobile has*/
+.ui-input-text{
+    margin:0px !important;
+}

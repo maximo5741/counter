@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <header>
+<link rel="stylesheet" href="css/change.css">
+<header>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" href="favicon.ico">
@@ -9,6 +10,7 @@
 		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
 
 		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="css/change.css.css">
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
 		<script src="js/jquery.js"></script>
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
@@ -17,11 +19,6 @@
 		<meta name="msapplication-tap-highlight" content="no">
 		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 		<title>Counter</title>
-		<style>
-			/*#sub{
-				float:left ;
-			}*/
-		</style>
     </header>
 <body>
 
@@ -31,34 +28,6 @@
 		</div>
 
 			<div role="main" class="ui-content">
-
-				<!--Start-->
-				<!--<form action="mailto:tampapopup@gmail.com" method="post" enctype="text/plain">-->
-
-				<!--<div data-role="tabs" id="tabs">
-					<div data-role="navbar">
-						<ul>
-							<li><a href="#one" data-ajax="false">one</a></li>
-							<li><input type="text" id="visitors" class="erase" value="0" </li>
-							<li><a href="ajax-content-ignore.html" data-ajax="false">three</a></li>
-						</ul>
-					</div>
-				</div>-->
-
-				<!--Start-->
-				<!--Start-->
-				<!--<div data-role="tabs" id="tabs">
-					<div data-role="navbar">
-						<ul>
-
-							<li></li>
-							<li></li>
-							<li></li>
-						</ul>
-					</div>
-				</div>-->
-				<!--end-->
-
 
 				<div data-role="tabs" id="tabs">
 					<div data-role="navbar">
@@ -298,7 +267,7 @@
 				</form>
 			</div>
 
-		<div data-role="footer">aCounter app was made by Maximo Del Valle & Paloma Harrell</div>
+		<div data-role="footer">aCounter app was made by Maximo Del Valle & Paloma Harrell, Alpha 1.05 version</div>
 	</div>
 
 	<script>
@@ -311,10 +280,6 @@
 				x[i].value = "0";
 			}
 		}
-
-	   function areu(content){
-		alert(content);
-	   }
 		function add(name) {
 			document.getElementById(name).value++;
 			//document.getElementById("field2").value = document.getElementById("field1").value;
@@ -323,12 +288,6 @@
 			document.getElementById(name).value--;
 		}
         function sendMail() {
-            /*var test = document.getElementById('visitors').value;
-            var lol='mailto:blahblah@gmail.com?Subject=';
-            lol=+ "test";
-            lol=+ "&body=";
-            lol=+"test";
-*/
             var iname = ["Visitors","Prime Member","CX Surveys","Demos","Alexa Demos","Eink","Tab","SMP","Alpha","Accessories","GF10","GF25","GF50","Prime $99","Returns","Acc Returns","2+FTV+","W.O.W","Guru"];
             var ivalues = [document.getElementById('visitors').value,document.getElementById('pm').value,
 				document.getElementById('cxs').value,document.getElementById('demos').value,document.getElementById('ad').value,document.getElementById('eink').value,
