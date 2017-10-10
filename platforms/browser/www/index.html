@@ -8,7 +8,6 @@
 		<!--<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
-
 		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
 		<link rel="stylesheet" href="css/change.css.css">
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
@@ -23,7 +22,13 @@
 <body>
 
 	<div id="content" data-role="page">
-		<div data-role="header">
+		<div data-role="header" class="jqm-header">
+			<a href="#" class="jqm-navmenu-link ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-nodisc-icon ui-alt-icon ui-btn-left">Menu</a>
+			<!--<nav>
+				<ul>
+					<li>Test</li>
+				</ul>
+			</nav>-->
 			<h3>aCounter</h3>
 		</div>
 
@@ -256,6 +261,18 @@
 					</div>
 				</div>
 				<!--end-->
+				<!--test-->
+				<div data-role="tabs" id="tabs">
+					<div data-role="navbar">
+						<ul>
+							<label to="sub">Test</label>
+							<li><input type="button" id="sub" onclick="sub('testing')" value="-" /></li>
+							<li><input type="text" id="testing" class="erase" value="0" /></li>
+							<li><input type="button" id="add" onclick="add('testing')" value="+" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--end-->
 
 					<!--<button onclick="areu('Paloma, are you sure?')">Try me</button>-->
 					<button onclick="erase()">Clear</button>
@@ -266,12 +283,19 @@
 					<input type="submit" value="Feedback" />
 				</form>
 			</div>
-
 		<div data-role="footer">aCounter app was made by Maximo Del Valle & Paloma Harrell, Alpha 1.05 version</div>
 	</div>
 
 	<script>
+        function save(){
+            var text_to_save=document.getElementById('testing').value;
+            localStorage.setItem("text", text_to_save); // save the item
+        }
 
+        function retrieve(){
+            var text=localStorage.getItem("text"); // retrieve
+            document.getElementById('testing').innerHTML = text; // display
+        }
 
 
 		function erase() {
@@ -313,6 +337,8 @@
             window.open(maxmail);
 
         }
+
+
 	</script>
 
 </body>
